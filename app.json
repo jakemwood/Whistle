@@ -1,5 +1,16 @@
 {
 	"name": "Whistle",
 	"description": "Safe SIM cards for the intellectually disabled",
-	"repository": "https://github.com/jakemwood/whistle"
+	"repository": "https://github.com/jakemwood/whistle",
+	"buildpacks": [
+		{
+			"url": "heroku/python"
+		}
+	],
+	"env": {
+		"SECRET_KEY": {
+			"description": "The secret key used by Django",
+			"generator": "secret"
+		}
+	}
 }
