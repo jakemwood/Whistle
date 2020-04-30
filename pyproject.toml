@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "whistle"
+version = "0.1.0"
+description = ""
+authors = ["Jake Wood <jake@jakewood.org>"]
+license = "agpl-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+django = "^3.0.5"
+twilio = "^6.39.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
