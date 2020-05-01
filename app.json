@@ -4,13 +4,20 @@
 	"repository": "https://github.com/jakemwood/whistle",
 	"buildpacks": [
 		{
-			"url": "https://github.com/jakemwood/whitstle-buildpack.git"
+			"url": "heroku/nodejs"
+		},
+		{
+			"url": "heroku/python"
 		}
 	],
 	"env": {
 		"SECRET_KEY": {
 			"description": "The secret key used by Django",
 			"generator": "secret"
+		},
+		"DEBUG": {
+			"description": "Run the app in debug mode",
+			"value": "False"
 		}
 	}
 }
