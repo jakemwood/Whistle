@@ -10,6 +10,11 @@
 			"url": "heroku/python"
 		}
 	],
+	"addons": [
+		{
+			"plan": "heroku-postgresql"
+		}
+	],
 	"env": {
 		"SECRET_KEY": {
 			"description": "The secret key used by Django",
