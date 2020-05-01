@@ -24,7 +24,7 @@ REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend')
 SECRET_KEY = os.environ.get('SECRET_KEY', '01234')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = []
 
