@@ -4,6 +4,9 @@
 	"repository": "https://github.com/jakemwood/whistle",
 	"buildpacks": [
 		{
+			"url": "heroku/nodejs"
+		},
+		{
 			"url": "https://github.com/moneymeets/python-poetry-buildpack.git"
 		},
 		{
