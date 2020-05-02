@@ -128,4 +128,9 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+TWILIO_ACCOUNT_SID = os.environ.get('TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = os.environ.get('TWILIO_AUTH_TOKEN')
+DJANGO_TWILIO_FORGERY_PROTECTION = False
+
 django_heroku.settings(locals())
+print(TWILIO_ACCOUNT_SID)
